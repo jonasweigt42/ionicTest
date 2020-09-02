@@ -1,20 +1,42 @@
-<ion-header [translucent]="true">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Sign Up</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="bg" fullscreen="true">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-padding">
+    <form class="ion-padding">
+
+      <div class="wrap-input">
+        <input class="input" type="text" name="user-name" placeholder="Full Name">
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="text" name="user-email" placeholder="Email">
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="password" name="password" placeholder="Password">
+      </div>
+
+      <div class="container-form-btn" >
+        <button class="form-btn custom-font">Submit</button>
+      </div>
+
+    </form>
+
   </div>
+
 </ion-content>
+
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <p class="ion-text-center custom-font">Already have an acoount? <a href="">Sign In</a></p>
+  </ion-toolbar>
+</ion-footer>
